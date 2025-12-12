@@ -68,9 +68,7 @@ scanning to capture comprehensive spatial relationships in 3D volumetric data mo
 ---
 
 ## ⚙️ Installation
-
-This section provides a template for setting up the environment used in our experiments.  
-Fill in the exact commands according to your preferred package manager (conda, pip, etc.) and your hardware setup.
+We tested our code on # Ubuntu 22.04.5 LTS.
 
 ### 1. Clone the repository
 
