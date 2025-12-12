@@ -108,7 +108,7 @@ import mamba_ssm
 ```
 
 ## 📂: Data Preparation
-Four datsets were involved in our analysis. Since all experiments are integrated into the nnU-Net v2 framework, please follow **nnU-Net v2** conventions for folder structure (such as setting environment variables for **nnUNet_raw, nnUNet_preprocessed, and nnUNet_results**) and data preprocessing.
+Four datsets were involved in our analyses. Since all experiments are integrated into the nnUNet_v2 framework, please follow **nnUNet_v2** conventions for folder structure (such as setting environment variables for **nnUNet_raw, nnUNet_preprocessed, and nnUNet_results**) and data preprocessing.
 - **CT Datasets**
   - AMOS2022_postChallenge_part1
     - task: Multi-organ abdominal segmentation on CT
@@ -125,7 +125,10 @@ Four datsets were involved in our analysis. Since all experiments are integrated
     - Official info / access: [TotalSegmentator Project Page](https://totalsegmentator.com/)
 
 ## 🚀: Model Training
-We have integrated trainers for SegFormer3D, UNETR, SwinUNETR, Umamba, CoTr and ours UlikeMamba_3dMT into the codebase. For example, we assign ID 218 to AMOSS2022_postChallenge_task1 after proprocessing. The command for running experiment on it with 2 GPUs would be: `MKL_NUM_THREADS=1,NUMEXPR_NUM_THREADS=1,OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES=1,3 nnUNetv2_train 218 3d_fullres 0 -tr nnUNetTrainerUlikeMamba_3dMT -num_gpus 2`
+We have integrated trainers for SegFormer3D, UNETR, SwinUNETR, Umamba, CoTr and ours UlikeMamba_3dMT into the codebase. For example, we assign ID 218 to AMOSS2022_postChallenge_task1 after proprocessing. The command for running experiment on it with 2 GPUs would be:
+
+`MKL_NUM_THREADS=1,NUMEXPR_NUM_THREADS=1,OMP_NUM_THREADS=1 CUDA_VISIBLE_DEVICES=1,3 nnUNetv2_train 218 3d_fullres 0 -tr nnUNetTrainerUlikeMamba_3dMT -num_gpus 2`
+
 Please refer to [nnUNet_v2 Usage Instructions](https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/how_to_use_nnunet.md) for more details.
 
 ## 🧾 Citation
