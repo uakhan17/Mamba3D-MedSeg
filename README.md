@@ -29,35 +29,41 @@ This section highlights several core findings and visual summaries from the pape
 
 ---
 
-### Figure 2 – Network architecture
+### Figure 2 – Network Configurations
 
-![Figure 2 – Network architecture](assets/fig2_architecture.png)
+![Figure 2 – Network Configurations](assets/mamba_pr2.png)
 
-*Block-level architecture of the proposed 3D Mamba backbone and its integration into the nnU-Net style encoder–decoder.*
-
----
-
-### Figure 3 – Performance across datasets
-
-![Figure 3 – Performance across datasets](assets/fig3_performance.png)
-
-*Summary Dice / HD95 across BraTS 2021, TotalSegmentator (CT), TotalSegmentatorMRI, and AMOS 2022.*
+*Left: detailed configurations of UlikeMamba 3d network. Here, ‘K’: kernel size of Conv, DW-
+Conv, or TransposeConv; ‘C’: number of channels; and ‘S’: stride. Right: Detailed configurations of Ulike-
+Trans SRA network. Here, ‘R’: reduction ratio of SRA; ‘H’: head number of SRA; and ‘E’: expansion ratio
+of FFN.*
 
 ---
 
-### Figure 4 – Efficiency vs. accuracy
+### Figure 3 – Multiscale Feature Fusion Strategies
 
-![Figure 4 – Efficiency vs. accuracy](assets/fig4_efficiency.png)
+![Figure 3 – Multiscale Feature Fusion Strategies](assets/mamba_pr3.png)
 
-*Trade-off between segmentation performance and computational efficiency (parameters, FLOPs, throughput).*
+*Four multi-scale modeling schemes for evaluating and comparing the long-range dependency
+modeling capabilities of Mamba and Transformers for multi-scale representation learning.*
 
 ---
 
-### Figure 5 – Qualitative examples
+### Figure 4 – Scanning Strategies
 
-![Figure 5 – Qualitative examples](assets/fig5_qualitative.png)
+![Figure 4 – Scanning Strategies](assets/mamba_pr4.png)
 
-*Representative 3D visualizations comparing Mamba-based models with CNN/Transformer baselines across different anatomies and modalities.*
+*UlikeMamba 3d with different sequential scanning strategies.*
+
+---
+
+### Figure 5 – UlikeMamba_3dMT Architecture
+
+![Figure 5 – UlikeMamba_3dMT Architecture](assets/mamba_pr5.png)
+
+*Our proposed Mamba layer in UlikeMamba 3dMT, which modifies the original 1D depthwise
+convolution to 3D depthwise convolution, embraces a multi-scale strategy and incorporates tri-directional
+scanning to capture comprehensive spatial relationships in 3D volumetric data more effectively.*
 
 ---
 
