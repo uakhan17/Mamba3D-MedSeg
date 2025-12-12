@@ -11,7 +11,7 @@
 
 ## :eyes: Overview
 
-This repository will host the official implementation and experiment instructions for our paper *A Comprehensive Analysis of Mamba for 3D Volumetric Medical Image Segmentation*.
+This repository hosts the official implementation and experiment instructions for our paper "*A Comprehensive Analysis of Mamba for 3D Volumetric Medical Image Segmentation*".
 
 Our study provides an extensive exploration of Mamba architectures for volumetric medical image segmentation, benchmarking them against established 3D CNN and Transformer-based methods.
 
@@ -19,7 +19,7 @@ Our study provides an extensive exploration of Mamba architectures for volumetri
 
 ## 🔍 Key Analyses
 
-This section highlights several core findings and visual summaries from the paper.  
+This section highlights several core findings and visual summaries from our paper.  
 
 ### Comparison of Model Architectures Between UlikeMamba and UlikeTrans
 
