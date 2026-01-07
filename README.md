@@ -108,7 +108,7 @@ import mamba_ssm
 ```
 
 ## 📂: Data Preparation
-Four datsets were involved in our analyses. Since all experiments are integrated into the nnUNet_v2 framework, please follow **nnUNet_v2** conventions for folder structure (such as setting environment variables for **nnUNet_raw, nnUNet_preprocessed, and nnUNet_results**) and data preprocessing.
+Four datasets were involved in our analyses. Since all experiments are integrated into the nnUNet_v2 framework, please follow **nnUNet_v2** conventions for folder structure (such as setting environment variables for **nnUNet_raw, nnUNet_preprocessed, and nnUNet_results**) and data preprocessing.
 - **CT Datasets**
   - AMOS2022_postChallenge_part1
     - task: Multi-organ abdominal segmentation on CT
